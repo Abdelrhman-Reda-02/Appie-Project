@@ -1,0 +1,164 @@
+/* 
+----01 TYPgrophy system 
+
+--FONT SIZE SYSTEM (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+--Font weight :
+default:400
+medium:500
+semi-bold:600
+Bold:700
+--line height: 
+default:1
+small:1.2
+paragraph default: 1.6
+bigger:1.8
+
+---letter-spacing
+-.5 px
+.75px
+
+All colors
+#182D60
+#ECF1F2
+#BF5857
+#3D9DE1
+#8C9EBE
+#DDAF55
+#D29A9B
+#ECC5A4
+#BCC6D1
+ #ff3e66
+
+
+----02 colors
+
+  -primary: #0e1133
+  -tent:
+  -shades:
+   #565870
+
+ (darker)
+ (medium)
+ (lighter)
+
+  -accents:
+  -Greys:
+  #888
+#767676 
+#6f6f6f 
+#555
+#333
+ 
+  -color: #333;
+---03 Shadows--
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
+
+
+---04 Border Redaius--
+5px
+9px
+11px
+
+
+---05 White Spaces--
+-SPACING SYSTEM (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 /ary
+*/
+
+/* ********************** */
+/* GENERAL COMPONENT */
+/* ********************** */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 65.5%;
+  overflow-x: hidden;
+}
+body {
+  font-weight: 400;
+  line-height: 1;
+  color: #555;
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+}
+.container {
+  /* 1140px in most website */
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  /* margin-bottom: 9.6rem; */
+}
+/* .grid:last-child{
+  margin-bottom: 0;
+} */
+.grid:not(:last-child) {
+  margin-bottom: 9.6rem;
+}
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid--4-cols {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+.grid--center-v {
+  align-items: center;
+}
+.align-center {
+  text-align: center;
+}
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 500;
+  line-height: 1.05;
+
+  letter-spacing: -0.5px;
+  color: #0e1133;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  font-weight: 400;
+  margin-bottom: 3.2rem;
+}
+.heading-secondary {
+  font-size: 3.6rem;
+  margin-bottom: 1.6rem;
+}
+.heading-tertiary {
+  font-size: 2rem;
+  margin-bottom: 1.6rem;
+}
+.subheading {
+  display: block;
+  font-size: 1.6rem;
+  line-height: 1.6;
+  margin-bottom: 3.2rem;
+}
+.title-m-d {
+  display: block;
+  font-size: 2rem;
+  font-weight: 600;
+  color: #d94e8f;
+  margin-bottom: 3.2rem;
+}
+*:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(0, 241, 246, 0.5);
+}
